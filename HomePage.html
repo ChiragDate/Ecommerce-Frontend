@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyYummy - Food Ordering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background: rgba(255, 255, 255, 0.0) !important; 
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        /* Dark text for navbar items */
+        .navbar-brand {
+            color: #ff0000 !important; 
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: #000 !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem !important;
+        }
+
+        .nav-link:hover {
+            color: #ff0000 !important;
+        }
+
+        .hero-section {
+            background-image: url('src/Masala-Dosa.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding-top: 200px; 
+        }
+
+        .product-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">YYummy</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CART</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PROFILE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section d-flex align-items-center">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row justify-content-start">
+                <div class="col-md-6 text-white">
+                    <h1 class="display-4 fw-bold mb-4">It's not just food<br>it's an Experience!</h1>
+                    <p class="lead mb-4">The best delivered food that you would never forget.</p>
+                    <button class="btn btn-warning btn-lg px-5 py-3 rounded-pill fw-bold">Order Now →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Order Fresh Food</h2>
+        
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <!-- Product 1 -->
+            <div class="col">
+                <div class="card h-100 border-0 bg-warning rounded-4">
+                    <div class="card-body text-center p-4">
+                        <img src="src/Idli.jpeg" class="product-image mb-3" alt="Special Rice">
+                        <h5 class="card-title fw-bold">Idli</h5>
+                        <p class="card-text fw-bold">₹69</p>
+                        <button class="btn btn-danger rounded-pill px-4">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 bg-warning rounded-4">
+                    <div class="card-body text-center p-4">
+                        <img src="/src/manchurian.jpeg" class="product-image mb-3" alt="Manchurian">
+                        <h5 class="card-title fw-bold">Manchurian</h5>
+                        <p class="card-text fw-bold">₹149</p>
+                        <button class="btn btn-danger rounded-pill px-4">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 bg-warning rounded-4">
+                    <div class="card-body text-center p-4">
+                        <img src="src/Momos.jpeg" class="product-image mb-3" alt="Steamed Momos">
+                        <h5 class="card-title fw-bold">Steamed Momos</h5>
+                        <p class="card-text fw-bold">₹99</p>
+                        <button class="btn btn-danger rounded-pill px-4">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 bg-warning rounded-4">
+                    <div class="card-body text-center p-4">
+                        <img src="/src/pasta.jpeg" class="product-image mb-3" alt="Special Curry">
+                        <h5 class="card-title fw-bold">Pasta</h5>
+                        <p class="card-text fw-bold">₹179</p>
+                        <button class="btn btn-danger rounded-pill px-4">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 bg-warning rounded-4">
+                    <div class="card-body text-center p-4">
+                        <img src="/src/burger.jpeg" class="product-image mb-3" alt="Burger Combo">
+                        <h5 class="card-title fw-bold">Burger Combo</h5>
+                        <p class="card-text fw-bold">₹249</p>
+                        <button class="btn btn-danger rounded-pill px-4">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 bg-warning rounded-4">
+                    <div class="card-body text-center p-4">
+                        <img src="/src/samosa.jpeg" class="product-image mb-3" alt="Veg Samosa">
+                        <h5 class="card-title fw-bold">Veg Samosa</h5>
+                        <p class="card-text fw-bold">₹49</p>
+                        <button class="btn btn-danger rounded-pill px-4">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 bg-warning rounded-4">
+                    <div class="card-body text-center p-4">
+                        <img src="/src/noodles.jpeg" class="product-image mb-3" alt="Hakka Noodles">
+                        <h5 class="card-title fw-bold">Hakka Noodles</h5>
+                        <p class="card-text fw-bold">₹149</p>
+                        <button class="btn btn-danger rounded-pill px-4">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 bg-warning rounded-4">
+                    <div class="card-body text-center p-4">
+                        <img src="/src/pizza.jpeg" class="product-image mb-3" alt="Special Pizza">
+                        <h5 class="card-title fw-bold">Special Pizza</h5>
+                        <p class="card-text fw-bold">₹299</p>
+                        <button class="btn btn-danger rounded-pill px-4">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
